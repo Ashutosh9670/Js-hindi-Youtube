@@ -7,5 +7,19 @@ if(true){
 }
 
 // console.log(a)
-console.log(b) //var is printing inside the loop beceause it work a function scope as well as global scope
+// console.log(b) //var is printing inside the loop beceause it work a function scope as well as global scope
 // console.log(c)
+const username = "Ashutosh"
+function one(){
+    
+    function twoadd(){
+
+        const website = "youtube"
+
+        console.log(website);
+    }
+}
+
+one()
+
+
