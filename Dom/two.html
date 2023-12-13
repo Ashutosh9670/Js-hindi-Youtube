@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Dom with chai or code</title>
+</head>
+<body style="background-color: #212121; color: #fff" >
+
+    <div class="parent">
+        <div class="Day">Monday</div>
+        <div class="Day">Tuesday</div>
+        <div class="Day">Wednesday</div>
+        <div class="Day">Thursady</div>
+
+    </div>
+    
+</body>
+
+<script>
+   const store =  document.querySelector('.parent')
+//    console.log(store)
+//    console.log(store.children);
+//    console.log(store.children[0]);
+
+//    for (let i = 0; i < store.children.length; i++) {
+//     console.log(store.children[i].textContent);
+//    }
+
+   store.children[0].style.color = "red"
+   console.log(store.firstElementChild)
+   console.log(store.lastElementChild);
+
+const day = document.querySelector(".Day")
+// console.log(day);
+// console.log(day.parentElement);
+// console.log(day.nextElementSibling);
+
+console.log("NODES", store.childNodes);
+</script>
+</html>
