@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Learning JavaScript DOM </title>
+</head>
+<body style="background-color: #212121; color: #fff">
+
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+    
+</body>
+
+<script>
+    function addLangName(LangName){
+        
+        const li = document.createElement('li')
+        li.innerHTML = `${LangName}`
+        document.querySelector(".language").appendChild(li)
+    }
+    
+   addLangName("TypeScript")
+   addLangName("python")
+
+    function addoptiLang(langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addoptiLang("golang")
+
+    //here we are going to learn Editing part 
+    //edit
+
+    const edit = document.querySelector("li:nth-child(1)")
+ //1st method 
+    // edit.innerHTML = "Ruby" //but this is not a right approach instead this we are document.createTextNode
+
+    document.createTextNode
+
+    //2nd method 
+
+    const newli = document.createElement('li')
+    newli.textContent = 'C#'
+    edit.replaceWith(newli)
+
+    //3rd method of editing
+
+    const secondLang  = document.querySelector("li:nth-child(2)");
+    secondLang.outerHTML = '<li>Next-Js</li>'
+
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
